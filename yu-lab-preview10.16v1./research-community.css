@@ -1,0 +1,121 @@
+/* Research and community pages, based on the lab's research and recruitment slides. */
+#main:focus{outline:none}
+#footer{padding:13px 0}
+.footer-inner{gap:8px 32px}
+.footer-nav{gap:clamp(22px,2vw,42px)}
+.footer-nav a{gap:9px;color:#294d73;font-size:clamp(14px,.8vw,17px);font-weight:500}
+.footer-icon{width:21px;height:21px;flex:none}
+.people-content .members{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.profile-lead>div:last-child{max-width:1100px}
+.profile-body{max-width:1120px}
+.method-body{max-width:88ch}
+.method-question{max-width:68ch}
+.join-opportunities .join-layout>div{max-width:1100px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.quiet-link{display:inline-block;color:#2455b5;border-bottom:1px solid #9ab3d8;padding:6px 0;font-size:14px;line-height:1.5;transition:color .18s,border-color .18s}
+.quiet-link:hover{color:#102f69;border-color:currentColor}
+.paper-read{font-size:11px;color:var(--blue)}
+
+/* A quotation from the original People page, with a quieter attribution. */
+.people-heading{padding:32px 0 28px;background:linear-gradient(115deg,#edf3fc,#e5eefb);border-bottom:1px solid #dce5f2}
+.people-heading blockquote{margin:12px 0 0}
+.people-heading blockquote p{font-family:'Cormorant Garamond',Baskerville,Georgia,serif;font-style:italic;font-weight:500;font-size:clamp(28px,2.9vw,60px);line-height:1.2;letter-spacing:-.018em;color:#23466f}
+.people-heading cite{display:block;font-size:11px;letter-spacing:1.5px;font-style:normal;color:#66809e;margin-top:14px}
+html[lang=zh-CN] .people-heading blockquote p{font-family:'Kaiti SC','STKaiti','KaiTi','Songti SC',serif;font-style:normal;font-size:clamp(28px,2.6vw,48px);line-height:1.55;letter-spacing:.025em}
+.people-content{padding-top:68px}
+.pi-photo img{width:100%;aspect-ratio:1;object-fit:cover}
+.profile-lead .biography-link{margin-top:12px}
+.alumni-section{margin-top:75px;scroll-margin-top:110px}
+.alumni-section .team-section-title{margin-top:0}
+.alumni-table-wrap{overflow-x:auto}
+.alumni-table{width:100%;border-collapse:collapse;font-size:13px;text-align:left;line-height:1.65}
+.alumni-table thead{background:#ecf2fa}
+.alumni-table th,.alumni-table td{padding:18px 20px;border-bottom:1px solid #dce5f0;vertical-align:top}
+.alumni-table thead th{font-size:11px;font-weight:550;color:#587393;letter-spacing:.02em}
+.alumni-table tbody th{font-weight:500;color:#203d61;white-space:nowrap}
+.alumni-table td{color:#667d97}
+.alumni-table td:nth-child(2){white-space:nowrap;font-variant-numeric:tabular-nums}
+
+/* Recruitment: values first, then research roles and the archived announcement. */
+.join-heading h1{font-size:clamp(38px,4.2vw,62px);line-height:1.13;max-width:950px}
+.join-heading p{max-width:880px;line-height:1.85}
+.join-values{padding:55px 0 62px}
+.join-values-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;margin-top:30px}
+.value-number{font-size:11px;letter-spacing:1.5px;color:#5985b5}
+.join-values-grid h2{font-family:var(--serif);font-size:25px;line-height:1.3;margin:16px 0}
+.join-values-grid p{font-size:13px;line-height:1.9;color:#677d95}
+.join-opportunities{padding-top:62px}
+.join-opportunities .join-layout{grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:70px}
+.join-opportunities .join-layout>div>h2{font-family:var(--serif);font-size:34px;line-height:1.2;margin-bottom:20px}
+.join-opportunities .join-layout>div>p,.join-role p,.join-apply p{font-size:14px;color:#617992;line-height:1.9}
+.join-role{margin-top:30px;padding-top:28px;border-top:1px solid var(--line)}
+.join-role h3,.join-apply h3{font-size:18px;line-height:1.5;font-weight:500;margin-bottom:12px}
+.recruitment-archive{margin:32px 0;padding:24px 28px;background:#eff4fb;border-left:2px solid #6899d2}
+.recruitment-archive>span{display:block;font-size:9px;letter-spacing:1.6px;color:#6985a5;margin-bottom:10px}
+.recruitment-archive p{font-size:12px;line-height:1.8;color:#70849c;margin-top:10px}
+.join-opportunities .contact-box{align-self:start;position:sticky;top:115px;padding:32px;background:#edf3fb;border-top:2px solid #527dad;min-width:0}
+.join-opportunities .contact-box a{font-size:14px;overflow-wrap:anywhere}
+.join-opportunities .contact-box h3{font-size:27px;line-height:1.25}
+.join-opportunities .contact-box address{font-size:12px;line-height:1.9}
+
+/* The scientific framework remains three scales; methods are four distinct pillars. */
+.research-opening{padding:64px 0 36px;background:linear-gradient(125deg,#f2f6fc,#e8f0fb);border-bottom:1px solid #d9e4f1}
+.research-opening h1{font-family:var(--serif);font-size:clamp(40px,4.25vw,64px);line-height:1.12;letter-spacing:-.035em;font-weight:400}
+.research-opening-copy{font-size:15px;line-height:1.9;color:#607791;max-width:900px;margin-top:26px}
+.research-continuum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:50px;margin-top:42px;padding-top:25px;border-top:1px solid #becfe2}
+.research-continuum>div{position:relative}
+.research-continuum>div+div:before{content:'';position:absolute;top:13px;left:-34px;width:16px;height:1px;background:#769abc}
+.research-continuum h2{font-size:20px;line-height:1.3;font-weight:500;margin-top:0;color:#244d77}
+.research-continuum p{font-size:12px;line-height:1.6;color:#6d87a4;margin-top:10px}
+.research-context{margin-top:25px;font-size:10px;color:#7790ab;letter-spacing:.025em}
+.research-methods{padding:48px 0 66px;background:white}
+.methods-heading{margin-bottom:32px}
+.method-index{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.method-index a{font-size:13px;line-height:1.65;padding:14px 0;border-top:1px solid #cbd9e9;color:#365d86}
+.method-index a:hover{color:#235ee8;border-color:#235ee8}
+.method-detail{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:64px;align-items:center;padding:55px 0;border-bottom:1px solid #e1e9f3;scroll-margin-top:15px}
+.method-figure{margin:0;min-width:0}
+.method-figure img{display:block;width:100%;height:auto}
+.method-figure figcaption{display:flex;gap:13px;align-items:baseline;margin-top:14px;color:#7288a2;font-size:11px;line-height:1.65}
+.method-copy h2{font-family:var(--serif);font-size:clamp(27px,2.25vw,34px);line-height:1.2;letter-spacing:-.5px;margin-bottom:19px}
+.method-question{font-size:16px;line-height:1.65;color:#365e89;margin-bottom:17px}
+.method-body{font-size:13px;line-height:1.95;color:#698099}
+.method-focus{list-style:none;margin:21px 0 0;padding:0;display:grid;gap:9px}
+.method-focus li{font-size:11px;line-height:1.65;color:#627b96;display:flex;align-items:baseline;gap:10px}
+.method-focus li:before{content:'';width:4px;height:4px;border-radius:50%;background:#69a0d2;flex-shrink:0;align-self:center}
+.ai-foundation{padding:32px 36px;margin-top:48px;background:linear-gradient(105deg,#112e54,#204c75);color:#e0ecf9}
+.ai-foundation h2{font-family:var(--serif);font-size:27px;line-height:1.3}
+.ai-foundation>div{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:22px;color:#c1def4;font-size:13px}
+.ai-foundation p{font-size:12px;line-height:1.85;color:#92b1d0;margin-top:20px;max-width:910px}
+@media(min-width:1800px){
+  .method-detail{gap:100px}.method-copy h2{font-size:38px}.method-body{font-size:15px}.method-question{font-size:18px}.method-focus li{font-size:13px}
+}
+@media(max-width:1000px){
+  .method-detail{gap:32px}.method-copy h2{font-size:27px}.method-question{font-size:15px}
+  .join-values-grid{gap:26px}.join-values-grid h2{font-size:23px}
+  .join-opportunities .join-layout{gap:32px;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
+  .join-opportunities .contact-box{padding:24px}
+}
+@media(max-width:1100px){
+  .footer-link-label{display:none}
+  .footer-nav{gap:12px}
+  .footer-nav a{width:44px;justify-content:center}
+}
+@media(max-width:760px){
+  #footer{padding:14px 0}.footer-inner{gap:3px}.footer-invitation{font-size:26px}
+  .people-heading{padding:28px 0}.people-heading blockquote p{font-size:32px}
+  .people-content{padding-top:44px}.alumni-section{margin-top:55px}.alumni-table{font-size:12px;min-width:560px}.alumni-table th,.alumni-table td{padding:14px}
+  .research-opening{padding:44px 0 28px}.research-opening h1{font-size:43px}.research-opening-copy{font-size:13px}
+  .research-continuum{gap:22px}.research-continuum h2{font-size:16px}.research-continuum p{font-size:10px}.research-continuum>div+div:before{display:none}
+  .method-index{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px}.method-index a{font-size:12px}
+  .method-detail{grid-template-columns:1fr;gap:27px;padding:40px 0}.method-figure{max-width:520px;width:100%;margin:auto}.method-figure figcaption{margin-top:4px}
+  .method-copy h2{font-size:29px}.method-body{font-size:13px}.method-focus li{font-size:12px}
+  .ai-foundation{padding:26px 24px}.ai-foundation h2{font-size:25px}.ai-foundation>div{gap:10px 24px;font-size:12px}
+  .join-values-grid{grid-template-columns:1fr;gap:28px}.join-values-grid article+article{border-top:1px solid var(--line);padding-top:26px}.join-values-grid h2{margin:10px 0}
+  .join-opportunities .join-layout{grid-template-columns:1fr;gap:40px}.join-opportunities .contact-box{position:static}
+  .join-heading h1{font-size:40px}.join-values{padding:40px 0}.join-opportunities{padding-top:42px}
+}
+@media(max-width:460px){
+  .research-continuum{grid-template-columns:1fr;gap:20px;margin-top:30px}.research-continuum h2{margin:0;font-size:18px}.research-continuum p{margin-top:5px;font-size:11px}.research-context{font-size:9px}
+}
+@media(max-width:560px){.people-content .members{grid-template-columns:repeat(2,minmax(0,1fr))}}
